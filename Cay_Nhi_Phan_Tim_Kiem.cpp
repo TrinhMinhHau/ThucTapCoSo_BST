@@ -155,7 +155,7 @@ void Graphics_Taocay(){
 		 line(190,240,170,300);
 		 delay(1000);
 		 circle(160,330,30);
-		 outtextxy(165,340,"1")
+		 outtextxy(165,340,"1");
 }
 void Graphics_Timkiem(){
 	settextstyle(1,1,1);
@@ -285,7 +285,7 @@ void Graphics_Xoa1con(){
 		 delay(1000);
 		 circle(225,330,30);
 		 outtextxy(230,340,"4");
-		}
+		
 }
 void Graphics_Xoa2con(){
 	settextstyle(1,1,1);
@@ -359,7 +359,7 @@ void Graphics_Xoa2con(){
 		 outtextxy(340,340,"7");
 		 line(370,240,340,300);
 		 delay(1000);
-		  setcolor(5);
+		 setcolor(RED);
 		 circle(289,89,30);
 		 outtextxy(295,100,"7");
 }
@@ -425,7 +425,7 @@ void Menu(TREE &t)
 		filein.close();
 		
 	}
-		else if(luachon==6){
+	else if(luachon==6){
 		int gd=0,gm=0;
 		initgraph(&gd,&gm,"");
 		Graphics_Taocay();
@@ -446,7 +446,7 @@ void Menu(TREE &t)
 		initgraph(&gd,&gm,"");
 		Graphics_Xoa1con();
 		getch();
-		closegraph()
+		closegraph();
 		
 	}
 	else if(luachon==9){
@@ -454,7 +454,7 @@ void Menu(TREE &t)
 		initgraph(&gd,&gm,"");
 		Graphics_Xoa2con();
 		getch();
-		closegraph()
+		closegraph();
 	}
 	else{
 		break;
