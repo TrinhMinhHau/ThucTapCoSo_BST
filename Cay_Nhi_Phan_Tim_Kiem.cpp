@@ -60,7 +60,7 @@ void TimnodeXoa(TREE &X,TREE &Y){
 	else{
 		X->data=Y->data;//Cap nhat data cua node can xoa thanh data cua node the mang
 		X=Y;//Cho node X tro den Y de sau nay xoa X 
-		Y=Y->pRight;//Cap nhat lai moi lien ket cho node cha cua node ma chung ta se xoa den NULL. Y->pRight = NULL
+		Y=Y->pRight;//Cap nhat lai moi lien ket cho node cha cua node ma chung ta se xoa den NULL. 
 	}
 }
 //Ham xoa mot node bat ki
@@ -122,6 +122,10 @@ void Graphics_Taocay(){
 	settextstyle(1,1,1);
 	setcolor(RED);
 	outtextxy(50,50,"Graphics for BST");
+	setcolor(RED);
+	settextstyle(3,1,3);
+	outtextxy(400,50,"5->2->8->7->9->4->1");
+	delay(1000);
 	setcolor(5);
 	settextstyle(3,1,3);
 		circle(289,89,30);
@@ -158,44 +162,38 @@ void Graphics_Taocay(){
 		 outtextxy(165,340,"1");
 }
 void Graphics_Timkiem(){
+   //thiet lap mot mau sac, kieu chu
 	settextstyle(1,1,1);
 	setcolor(RED);
 	outtextxy(50,50,"Graphics for BST");
+	setcolor(RED);
+	settextstyle(3,1,3);
+	outtextxy(400,50,"Find node number 4");
+	delay(1000);
 	setcolor(5);
 	settextstyle(3,1,3);
+	//ham mo ta 1 cay
 		circle(289,89,30);
 		outtextxy(295,100,"5");
-		//delay(1000);
 		 line(270,117,213,180);
-		 //delay(1000);
 		 circle(200,210,30);
 		 outtextxy(210,220,"2");
-		 //delay(1000);
 		 line(300,120,360,180);
-		 //delay(1000);
 		 circle(370,210,30);
 		 outtextxy(380,220,"8");
-		// delay(1000);
 		 line(370,240,340,300);
-		 //delay(1000);
 		 circle(330,330,30);
 		 outtextxy(340,340,"7");
-		//delay(1000);
 		 line(380,240,400,300);
-		 //delay(1000);
 		 circle(400,330,30);
 		 outtextxy(410,340,"9");
-		 //delay(1000);
 		 line(200,240,220,300);
-		 //delay(1000);
 		 circle(225,330,30);
 		 outtextxy(230,340,"4");
-		 //delay(1000);
 		 line(190,240,170,300);
-		 //delay(1000);
 		 circle(160,330,30);
 		 outtextxy(165,340,"1");
-		 //tim kiem phan tu bat ki
+	//tim kiem phan tu bat ki
 		 setcolor(BLUE);
 		 circle(289,89,30);
 		 outtextxy(295,100,"5");
@@ -222,41 +220,33 @@ void Graphics_Xoa1con(){
 	settextstyle(1,1,1);
 	setcolor(RED);
 	outtextxy(50,50,"Graphics for BST");
+	setcolor(RED);
+	settextstyle(3,1,3);
+	outtextxy(400,50,"Delete node number 4");
 	setcolor(5);
 	settextstyle(3,1,3);
+		delay(1000);
 		circle(289,89,30);
 		outtextxy(295,100,"5");
-		//delay(1000);
 		 line(270,117,213,180);
-		 //delay(1000);
 		 circle(200,210,30);
 		 outtextxy(210,220,"2");
-		 //delay(1000);
 		 line(300,120,360,180);
-		 //delay(1000);
 		 circle(370,210,30);
 		 outtextxy(380,220,"8");
-		// delay(1000);
 		 line(370,240,340,300);
-		 //delay(1000);
 		 circle(330,330,30);
 		 outtextxy(340,340,"7");
-		//delay(1000);
 		 line(380,240,400,300);
-		 //delay(1000);
 		 circle(400,330,30);
 		 outtextxy(410,340,"9");
-		 //delay(1000);
 		 line(200,240,220,300);
-		 //delay(1000);
 		 circle(225,330,30);
 		 outtextxy(230,340,"4");
-		 //delay(1000);
 		 line(190,240,170,300);
-		 //delay(1000);
 		 circle(160,330,30);
 		 outtextxy(165,340,"1");
-		 //tim kiem phan tu bat ki
+		 //tim kiem phan tu sô 4
 		 setcolor(BLUE);
 		 circle(289,89,30);
 		 outtextxy(295,100,"5");
@@ -291,38 +281,28 @@ void Graphics_Xoa2con(){
 	settextstyle(1,1,1);
 	setcolor(RED);
 	outtextxy(50,50,"Graphics for BST");
-	setcolor(5);
+	setcolor(RED);
 	settextstyle(3,1,3);
+	outtextxy(400,50,"Delete node number 5");
+		setcolor(5);
 		circle(289,89,30);
 		outtextxy(295,100,"5");
-		//delay(1000);
 		 line(270,117,213,180);
-		 //delay(1000);
 		 circle(200,210,30);
 		 outtextxy(210,220,"2");
-		 //delay(1000);
 		 line(300,120,360,180);
-		 //delay(1000);
 		 circle(370,210,30);
 		 outtextxy(380,220,"8");
-		// delay(1000);
 		 line(370,240,340,300);
-		 //delay(1000);
 		 circle(330,330,30);
 		 outtextxy(340,340,"7");
-		//delay(1000);
 		 line(380,240,400,300);
-		 //delay(1000);
 		 circle(400,330,30);
 		 outtextxy(410,340,"9");
-		 //delay(1000);
 		 line(200,240,220,300);
-		 //delay(1000);
 		 circle(225,330,30);
 		 outtextxy(230,340,"4");
-		 //delay(1000);
 		 line(190,240,170,300);
-		 //delay(1000);
 		 circle(160,330,30);
 		 outtextxy(165,340,"1");
 		 //tim kiem phan tu bat ki
@@ -354,14 +334,14 @@ void Graphics_Xoa2con(){
 		 circle(330,330,30);
 		 outtextxy(340,340,"7");
 		 delay(1000);
+		 setcolor(RED);
+		 circle(289,89,30);
+		 outtextxy(295,100,"7");
+		 delay(1000);
 		 setcolor(0);
 		 circle(330,330,30);
 		 outtextxy(340,340,"7");
 		 line(370,240,340,300);
-		 delay(1000);
-		 setcolor(RED);
-		 circle(289,89,30);
-		 outtextxy(295,100,"7");
 }
 void Menu(TREE &t)
 { 
