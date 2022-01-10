@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Cay_Nhi_Phan_Tim_Kiem.o
-LINKOBJ  = Cay_Nhi_Phan_Tim_Kiem.o
+OBJ      = Mo_Phong_Cay_Nhi_Phan_Tim_Kiem.o
+LINKOBJ  = Mo_Phong_Cay_Nhi_Phan_Tim_Kiem.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -lbgi -lgdi32 -luser32 -m32
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-Cay_Nhi_Phan_Tim_Kiem.o: Cay_Nhi_Phan_Tim_Kiem.cpp
-	$(CPP) -c Cay_Nhi_Phan_Tim_Kiem.cpp -o Cay_Nhi_Phan_Tim_Kiem.o $(CXXFLAGS)
+Mo_Phong_Cay_Nhi_Phan_Tim_Kiem.o: Mo_Phong_Cay_Nhi_Phan_Tim_Kiem.cpp
+	$(CPP) -c Mo_Phong_Cay_Nhi_Phan_Tim_Kiem.cpp -o Mo_Phong_Cay_Nhi_Phan_Tim_Kiem.o $(CXXFLAGS)
