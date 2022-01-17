@@ -147,6 +147,7 @@ void Graphics(int a[],char b[]){
 			
 		}
 // Ve node thu 3
+
 		delay(1000);
 		if(a[3]>a[1]&&a[1]>a[2]){
 		line(300,120,360,180);
@@ -185,7 +186,8 @@ void Graphics(int a[],char b[]){
 		 outtextxy(165,340,b);
 		}
 	//Ve node thu 4 
-			delay(1000);
+	if(a[2]<a[1]){
+	delay(1000);
 		if(a[4]>a[1]&&a[3]<a[1]&&a[2]<a[1]){
 		line(300,120,360,180);
 		itoa(a[4],b,10);
@@ -199,6 +201,7 @@ void Graphics(int a[],char b[]){
 			outtextxy(210,220,b);
 		}
 		//
+		
 		else if(a[4]<a[2]&&a[4]<a[1]){
 		 line(190,240,170,300);
 		 itoa(a[4],b,10);
@@ -236,23 +239,54 @@ void Graphics(int a[],char b[]){
 		 circle(160,330,30);
 		 outtextxy(165,340,b);
 		}
-		
-	//Ve node thu 5
-		delay(1000);
-		 if(a[5]<a[2]&&a[5]<a[1]){
+		}
+		else if(a[2] > a[1]){
+			delay(1000);
+					
+		 if(a[4]<a[3]&&a[4]<a[1]){
 		 line(190,240,170,300);
-		 itoa(a[5],b,10);
+		 itoa(a[4],b,10);
 		 circle(160,330,30);
 		 outtextxy(165,340,b);
 		}
-		else if(a[5]>a[2]&&a[5]<a[1]){
+		else if(a[4]>a[3]&&a[4]<a[1]){
 		 line(200,240,220,300);
-		 itoa(a[5],b,10);
+		 itoa(a[4],b,10);
 		 circle(225,330,30);
 		 outtextxy(230,340,b);
 		}
+	
+		 else if(a[4]>a[2] && a[2]>a[1] ){
+		 line(380,240,400,300);
+		itoa(a[4],b,10);
+		 circle(400,330,30);
+		 outtextxy(410,340,b);
+		}
+		else if(a[4]<a[2] && a[2]>a[1]){
+		 line(370,240,340,300);
+		 itoa(a[4],b,10);
+		 circle(330,330,30);
+		 outtextxy(340,340,b);
+		}
+		else if(a[4]>a[2] && a[2]<a[1]){
+		 line(200,240,220,300);
+		 itoa(a[4],b,10);
+		 circle(225,330,30);
+		 outtextxy(230,340,b);
+		}
+		else if(a[4]<a[2] && a[2]<a[1]){
+		 line(190,240,170,300);
+		 itoa(a[4],b,10);
+		 circle(160,330,30);
+		 outtextxy(165,340,b);
+		}
+		}	
+		
+	//Ve node thu 5
+		//
 		//kiem tra xem node nhap thu 4 co lon hon tat ca khong
 		if(a[4]>a[1]&&a[4]>a[2]&&a[4]>a[3]){
+			delay(1000);
 			if(a[5]>a[4]){
 		 line(380,240,400,300);
 		 itoa(a[5],b,10);
@@ -266,36 +300,69 @@ void Graphics(int a[],char b[]){
 		 outtextxy(340,340,b);
 			}
 		}
-		
-	
-	  else{
-	  	if(a[5]>a[3] && a[5]>a[1] ){
+	  else {
+	  	if(a[2]>a[1])
+	  	{
+	  	delay(1000);
+		if(a[5]>a[2] && a[5]>a[1] ){
 		 line(380,240,400,300);
 		itoa(a[5],b,10);
 		 circle(400,330,30);
 		 outtextxy(410,340,b);
 		}
-		else if(a[5]<a[3] && a[5]>a[1] ){
+		else if(a[5]<a[2] && a[5]>a[1]){
 		 line(370,240,340,300);
-		 itoa(a[5],b,10);
+		 itoa(a[6],b,10);
 		 circle(330,330,30);
 		 outtextxy(340,340,b);
 		}
-		else if(a[5]>a[3] && a[3]<a[1]){
+		else if(a[5]>a[2] && a[5]<a[1]){
 		 line(200,240,220,300);
 		 itoa(a[5],b,10);
 		 circle(225,330,30);
 		 outtextxy(230,340,b);
 		}
-		else if(a[5]<a[3] && a[3]<a[1]){
+		
+		else if(a[5]<a[2] && a[5]<a[1]){
 		 line(190,240,170,300);
 		 itoa(a[5],b,10);
 		 circle(160,330,30);
 		 outtextxy(165,340,b);
+	  	}
+	  	
+	  		} 
+	  	else if(a[2] <a[1]){
+		delay(1000);
+		if(a[5]>a[3] && a[5]>a[1] ){
+		 line(380,240,400,300);
+		itoa(a[5],b,10);
+		 circle(400,330,30);
+		 outtextxy(410,340,b);
 		}
+		else if(a[5]<a[3] && a[5]>a[1]){
+		 line(370,240,340,300);
+		 itoa(a[6],b,10);
+		 circle(330,330,30);
+		 outtextxy(340,340,b);
+		}
+		else if(a[5]>a[3] && a[5]<a[1]){
+		 line(200,240,220,300);
+		 itoa(a[5],b,10);
+		 circle(225,330,30);
+		 outtextxy(230,340,b);
+		}
+		else if(a[5]<a[3] && a[5]<a[1]){
+		 line(190,240,170,300);
+		 itoa(a[5],b,10);
+		 circle(160,330,30);
+		 outtextxy(165,340,b);
+	  	}
 	  }
+	}
 		
 	//Ve node thu 6
+	if(a[2]>a[1])
+	{a[3]=a[2];} 
 		delay(1000);
 		if(a[6]>a[3] && a[6]>a[1] ){
 		 line(380,240,400,300);
@@ -322,6 +389,7 @@ void Graphics(int a[],char b[]){
 		 outtextxy(165,340,b);
 		}
 	// Ve node thu 7
+	if(a[2]>a[1]){a[3]=a[2];}
 		delay(1000);
 		if(a[7]>a[3] && a[7]>a[1]  ){
 		 line(380,240,400,300);
@@ -1250,8 +1318,6 @@ void Xoa(int a[],char b[]){
 		 outtextxy(165,340,b);
 		 
 		}
-		
-			
 		}
 		//Xoa a[4]
 	if(q==a[4]){
@@ -1407,7 +1473,6 @@ void Xoa(int a[],char b[]){
 			}
 			
 		}
-		
 	  else{
 	  	if(a[5]>a[3] && a[5]>a[1] ){
 		 line(380,240,400,300);
@@ -1638,18 +1703,20 @@ void Menu(TREE &t)
 	else if(luachon==6){
 	int a[100];
 	char b[20];
+	/*
 	int n;
 	docfile(a,n);
 	for(int i=1;i<=n;i++)
         printf("%3d",a[i]);
-	/*
+        */
+	
 	cout<<"Nhap so node can mo ta (7 node va 3 muc): ";
 	int n;
 	cin>>n;
 	 for(int i = 1;i <= n; i++){
         scanf("%d", &a[i]);
     }
-    */
+    
     
     int gd=0,gm=0;
 		initgraph(&gd,&gm,"");
